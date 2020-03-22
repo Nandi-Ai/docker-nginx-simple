@@ -15,7 +15,7 @@ pipeline {
   
   stages {
         
-        stage('Example') {
+        stage('clone github') {
           steps {
             git branch: "${params.BRANCH}", url: githuburl
           }
