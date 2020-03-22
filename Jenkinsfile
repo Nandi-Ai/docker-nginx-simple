@@ -17,7 +17,7 @@ pipeline {
         
         stage('clone github') {
           steps {
-            git branch: "${params.BRANCH}", url: githuburl
+          echo "checkout scm"
           }
         }  
         
