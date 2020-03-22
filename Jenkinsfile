@@ -1,7 +1,7 @@
 pipeline {
   
   
-  agent { docker { image 'python3-with-pytest' } }
+  agent any
 
 
   environment {
