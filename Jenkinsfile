@@ -11,9 +11,7 @@ pipeline {
     registryurl=  "https://558860702682.dkr.ecr.eu-central-1.amazonaws.com/hello-world"
     githuburl = 'https://github.com/lado-g/docker-nginx-simple.git'
   }
-    parameters {
-    gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
-  }
+    
   
   stages {
         
